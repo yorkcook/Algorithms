@@ -2,6 +2,8 @@ import unittest
 from recipe_batches import recipe_batches
 
 class Test(unittest.TestCase):
+  
+  #test case has example where not all ingredients from receipe are in ingredients list
 
   def test_recipe_batches(self):
     self.assertEqual(recipe_batches({ 'milk': 100, 'flour': 4, 'sugar': 10, 'butter': 5 }, { 'milk': 1288, 'flour': 9, 'sugar': 95 }), 0)
